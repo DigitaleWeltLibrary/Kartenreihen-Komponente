@@ -1,0 +1,99 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+  main {
+    height: 100dvh;
+    margin: 0px 20px;
+    article {
+      section {
+        padding: 50px;
+        &.orange {
+          background-color: hsl(31, 77%, 52%);
+          border-radius: 1.5rem 1.5rem 0 0;
+        }
+        &.cyan {
+          background-color: hsl(184, 100%, 22%);
+        }
+        &.dcyan {
+          background-color: hsl(179, 100%, 13%);
+          border-radius: 0 0 1.5rem 1.5rem;
+        }
+        img {
+          object-fit: contain;
+          height: 50px;
+          width: fit-content;
+        }
+        h1 {
+          color: hsl(0, 0%, 95%);
+          font-size: 2.5rem;
+          margin: 20px 0 20px 0;
+        }
+        p {
+          font-size: 15px;
+          line-height: 30px;
+          color: hsla(0, 0%, 100%, 0.75);
+          text-wrap: balance;
+        }
+        button {
+          background-color: hsl(0, 0%, 95%);
+          border: none;
+          font-size: 15px;
+          width: fit-content;
+          padding: 5px 10px;
+          height: 40px;
+          border-radius: 2rem;
+          cursor: pointer;
+          font-weight: bold;
+          &.btn-orange {
+            color: hsl(31, 77%, 52%);
+          }
+          &.btn-cyan {
+            color: hsl(184, 100%, 22%);
+          }
+          &.btn-dcyan {
+            color: hsl(179, 100%, 13%);
+          }
+
+          &:hover {
+            border: hsl(0, 0%, 95%) 2px solid;
+            background-color: transparent;
+            color: hsl(0, 0%, 95%);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  body {
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100dvh;
+      max-width: 1500px;
+      margin: 0 auto;
+      article {
+        display: flex;
+        flex-direction: row;
+        height: fit-content;
+        section {
+          &.orange {
+            border-radius: 1.5rem 0 0 1.5rem;
+          }
+          &.dcyan {
+            border-radius: 0 1.5rem 1.5rem 0;
+          }
+        }
+      }
+    }
+  }
+}
